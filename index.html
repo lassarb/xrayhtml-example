@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>xray</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/X-rayHTML.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+</head>
+
+<body>
+    <div data-xrayhtml="flip" class="prism">
+        <blockquote class="main_quote">
+            Про котів і кішок існує
+        </blockquote>
+        <div data-xrayhtml="flip" class="prism">
+            <blockquote>
+                Він є таким же індивідуальним як у людини відбитки пальців; Існують країни, в яких домашня кішка в родині є винятком, наприклад, в Габоні, в Перу. А в інших країнах, наприклад, в Австралії, кішки живуть майже в кожній родині, і п
+            </blockquote>
+        </div>
+        <!-- {# <div data-xrayhtml="flip" class="prism"> #} -->
+        <blockquote> А найбільшим представником котячих є тигр, його вага досягає 300 кілограмів; У деяких країнах кішки отримують пенсійне забезпечення. До прикладу, в Австрії, коту, який охороняє склад зерна, покладена пенсія. Тільки, варто зауважити, що не в грошовому еквіваленті, а в продуктовому, тобто м'ясо, бульйон, молоко;
+        </blockquote>
+        <!-- </div> -->
+        <!-- {# <div data-xrayhtml="flip" class="prism"> #} -->
+        <blockquote> А найбільшим представником котячих є тигр, його вага досягає 300 кілограмів; У деяких країнах кішки отримують пенсійне забезпечення. До прикладу, в Австрії, коту, який охороняє склад зерна, покладена пенсія. Тільки, варто зауважити, що не в грошовому еквіваленті, а в продуктовому, тобто м'ясо, бульйон, молоко;
+        </blockquote>
+        <!-- </div> -->
+        <!-- {# <div data-xrayhtml="flip" class="prism"> #} -->
+        <blockquote> А найбільшим представником котячих є тигр, його вага досягає 300 кілограмів; У деяких країнах кішки отримують пенсійне забезпечення. До прикладу, в Австрії, коту, який охороняє склад зерна, покладена пенсія. Тільки, варто зауважити, що не в грошовому еквіваленті, а в продуктовому, тобто м'ясо, бульйон, молоко;
+        </blockquote>
+        <!-- </div> -->
+        <!-- <code>data-xrayhtml</code> -->
+        <blockquote> А найбільшим представником котячих є тигр, його вага досягає 300 кілограмів; У деяких країнах кішки отримують пенсійне забезпечення. До прикладу, в Австрії, коту, який охороняє склад зерна, покладена пенсія. Тільки, варто зауважити, що не в грошовому еквіваленті, а в продуктовому, тобто м'ясо, бульйон, молоко;
+        </blockquote>
+        <!-- </div> -->
+        <!-- <div data-xrayhtml="flip" class="prism"> -->
+        <blockquote> А найбільшим представником котячих є тигр, його вага досягає 300 кілограмів; У деяких країнах кішки отримують пенсійне забезпечення. До прикладу, в Австрії, коту, який охороняє склад зерна, покладена пенсія. Тільки, варто зауважити, що не в грошовому еквіваленті, а в продуктовому, тобто м'ясо, бульйон, молоко;
+        </blockquote>
+        <footer>
+            <ul>
+                <li><a href="#"><i class="fa fa-vk fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://codepen.io"><i class="fa fa-codepen fa-lg" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/X-rayHTML.js"></script>
+    <script src="js/prism.min.js"></script>
+    <script type="text/javascript">
+    $(window).bind("create.xrayhtml", function(e) {
+        var prism = !!~e.target.getAttribute("class").indexOf("prism");
+
+        if (prism && "Prism" in window) {
+            $(".prism").find("code").addClass("language-markup");
+            Prism.highlightAll();
+        }
+    });
+    </script>
+</body>
+
+</html>
